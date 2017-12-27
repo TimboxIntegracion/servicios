@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tns="urn:WashOut">
+  <soap:Body>
+    <tns:recuperar_comprobante_external_id_response>
+      <recuperar_comprobante_external_id_result xsi:type="tns:recuperar_comprobante_external_id_result">
+        <estatus xsi:type="xsd:string">200</estatus>
+        <cantidad xsi:type="xsd:string">1</cantidad>
+        <comprobantes xsi:type="xsd:string"><?xml version="1.0" encoding="UTF-8"?>
+<Comprobantes type="array">
+  <CFDI>
+    <external-id>12345</external-id>
+    <xml><?xml version="1.0" encoding="utf-8"?>
+<cfdi:Comprobante xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cfdi="http://www.sat.gob.mx/cfd/3" Version="3.3" Serie="RogueOne" Folio="HNFK231" Fecha="2017-12-21T13:42:21" Sello="QMr75rF//LuMKztWsSk0c6FWBRgVd7pWh/UlAfqXg+DcD4AZfN8uBhR4zBU9RTyB5zOyld9/lTc+CoshbJIonHpDOn3OpNimAFzEcjw2alNPfyNLhGpjl2K+m3hpr8bFgrItbEyfJAaIQZQbJ7q3eKEjUi54s3rMblr+shCD9nB0OjNsGdaLvxNfNeMvvp5BUwnq3eTowGGpHn36AchGqVUjF4mvfCfurl1cjyar/4/cXYUcRlo8kIXO9R4G7cYQ8uIYNpfxjFRLqkU0CAzTs9Cln01yC0M3LhlMHT3sv2+guRur5GNcgZ/XPlFGpmC+4Ip4d5dy8jeQ7IK4tJJYog==" FormaPago="01" NoCertificado="" Certificado="" SubTotal="200.12" Descuento="10.0" Moneda="MXN" TipoCambio="1" Total="542.34" TipoDeComprobante="I" MetodoPago="PUE" LugarExpedicion="06300" xsi:schemaLocation="http://www.sat.gob.mx/cfd/3 http://www.sat.gob.mx/sitio_internet/cfd/3/cfdv33.xsd ">
+  <cfdi:Emisor Rfc="LAN7008173R5" Nombre="CINDEMEX SA DE CV" RegimenFiscal="601"/>
+  <cfdi:Receptor Rfc="CAGX830207GW3" Nombre="Oscar Castillo" UsoCFDI="G03"/>
+  <cfdi:Conceptos>
+    <cfdi:Concepto ClaveProdServ="50211503" NoIdentificacion="UT421511" Cantidad="1" ClaveUnidad="H87" Unidad="Pieza" Descripcion="Cigarros" ValorUnitario="200.1230" Descuento="10.000" Importe="200.123000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="200.123000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="32.019680"/>
+          <cfdi:Traslado Base="200.123000" Impuesto="003" TipoFactor="Tasa" TasaOCuota="1.600000" Importe="320.196800"/>
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+  </cfdi:Conceptos>
+  <cfdi:Impuestos TotalImpuestosTrasladados="352.22">
+    <cfdi:Traslados>
+      <cfdi:Traslado Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="32.0200"/>
+      <cfdi:Traslado Impuesto="003" TipoFactor="Tasa" TasaOCuota="1.600000" Importe="320.2000"/>
+    </cfdi:Traslados>
+  </cfdi:Impuestos>
+  <cfdi:Complemento>
+    <tfd:TimbreFiscalDigital xmlns:tfd="http://www.sat.gob.mx/TimbreFiscalDigital" xsi:schemaLocation="http://www.sat.gob.mx/TimbreFiscalDigital http://www.sat.gob.mx/sitio_internet/cfd/TimbreFiscalDigital/TimbreFiscalDigitalv11.xsd" Version="1.1" UUID="E9ACDE4D-EABC-4EAC-8110-D96EFE84C01C" FechaTimbrado="2017-12-21T13:42:24" RfcProvCertif="IAD121214B34" SelloCFD="QMr75rF//LuMKztWsSk0c6FWBRgVd7pWh/UlAfqXg+DcD4AZfN8uBhR4zBU9RTyB5zOyld9/lTc+CoshbJIonHpDOn3OpNimAFzEcjw2alNPfyNLhGpjl2K+m3hpr8bFgrItbEyfJAaIQZQbJ7q3eKEjUi54s3rMblr+shCD9nB0OjNsGdaLvxNfNeMvvp5BUwnq3eTowGGpHn36AchGqVUjF4mvfCfurl1cjyar/4/cXYUcRlo8kIXO9R4G7cYQ8uIYNpfxjFRLqkU0CAzTs9Cln01yC0M3LhlMHT3sv2+guRur5GNcgZ/XPlFGpmC+4Ip4d5dy8jeQ7IK4tJJYog==" NoCertificadoSAT="20001000000300022323" SelloSAT="ke3Aono8q6dEtuUfzgjxbJCfeCeC7UvvOh45x5PhdFUamXELuVR/8MYIGDsCzgv1/eMPFrIbAjjI13xJRB7a+racursYv4PbTJTM9+7OtxlmXFkQs0uRun0rItncY4Kv4WTEmZ/ps3l/JqCahvRC5sDk/SmeYVol7wW4o1fw/bP0k56YzKQ79Robiilt7d+5NVGiaxCZs3xX9LJ1cVGONdKX4RiRcWRFCcvuIkIHLYvGVfcM9LOGuB4slv7osiatwVGW7qlF/jcRd0eKLCDwLaQEaQjIwgDPhVmfrKrKnqaflscVL42DPvwveXd5xM26q9J4LV6qFrwyFn6rknulHA=="/>
+  </cfdi:Complemento>
+</cfdi:Comprobante>
+</xml>
+  </CFDI>
+</Comprobantes>
+</comprobantes>
+      </recuperar_comprobante_external_id_result>
+    </tns:recuperar_comprobante_external_id_response>
+  </soap:Body>
+</soap:Envelope>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tns="urn:WashOut">
+  <soap:Body>
+    <tns:consulta_rfc_response>
+      <consulta_rfc_result xsi:type="tns:consulta_rfc_result">
+        <codigo xsi:type="xsd:string">200</codigo>
+        <status xsi:type="xsd:string">RFC encontrado en la lista de RFC del SAT</status>
+        <informacion xsi:type="xsd:string"><?xml version="1.0" encoding="UTF-8"?>
+          <info>
+            <rfc>TME840315KT6</rfc>
+            <sncf>0</sncf>
+            <sc>0</sc>
+          </info>
+        </informacion>
+      </consulta_rfc_result>
+    </tns:consulta_rfc_response>
+  </soap:Body>
+</soap:Envelope>

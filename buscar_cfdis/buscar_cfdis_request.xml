@@ -1,0 +1,22 @@
+<soapenv:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:WashOut">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <urn:buscar_cfdis soapenv:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">
+         <username xsi:type="xsd:string">usuario</username>
+         <password xsi:type="xsd:string">password</password>
+         <parametros xsi:type="urn:parametros">
+            <rfc_emisor xsi:type="xsd:string"></rfc_emisor>
+            <rfc_receptor xsi:type="xsd:string"></rfc_receptor>
+            <fecha_emision_inicio xsi:type="xsd:string"></fecha_emision_inicio>
+            <fecha_emision_fin xsi:type="xsd:string"></fecha_emision_fin>
+            <fecha_timbrado_inicio xsi:type="xsd:string"></fecha_timbrado_inicio>
+            <fecha_timbrado_fin xsi:type="xsd:string"></fecha_timbrado_fin>
+            <cancelado xsi:type="xsd:string"></cancelado>
+            <external_id xsi:type="xsd:string"></external_id>
+            <uuid xsi:type="xsd:string">DC40E026-EECC-4C1B-8B2B-1582542A7512</uuid>
+            <folio xsi:type="xsd:string"></folio>
+            <serie xsi:type="xsd:string"></serie>
+         </parametros>
+      </urn:buscar_cfdis>
+   </soapenv:Body>
+</soapenv:Envelope>

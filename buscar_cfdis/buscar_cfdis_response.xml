@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tns="urn:WashOut">
+  <soap:Body>
+    <tns:buscar_cfdis_response>
+      <buscar_cfdis_result xsi:type="tns:buscar_cfdis_result">
+        <estatus xsi:type="xsd:string">200</estatus>
+        <cantidad xsi:type="xsd:string">1</cantidad>
+        <comprobantes xsi:type="xsd:string"><?xml version="1.0" encoding="UTF-8"?>
+<comprobantes type="array">
+  <cfdi>
+    <folio>HNFK231</folio>
+    <serie>RogueOne</serie>
+    <external-id nil="true"/>
+    <uuid>DC40E026-EECC-4C1B-8B2B-1582542A7512</uuid>
+    <RFCEmisor>LAN7008173R5</RFCEmisor>
+    <NombreEmisor>CINDEMEX SA DE CV</NombreEmisor>
+    <RFCReceptor>CAGX830207GW3</RFCReceptor>
+    <NombreReceptor>Oscar Castillo</NombreReceptor>
+    <Total type="float">542.34</Total>
+    <fechaEmision>2017-12-26T13:42:22</fechaEmision>
+    <fechaTimbrado>2017-12-26T13:42:27</fechaTimbrado>
+    <estatus>Vigente</estatus>
+  </cfdi>
+</comprobantes>
+</comprobantes>
+      </buscar_cfdis_result>
+    </tns:buscar_cfdis_response>
+  </soap:Body>
+</soap:Envelope>

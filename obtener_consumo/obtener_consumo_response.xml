@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tns="urn:WashOut">
+  <soap:Body>
+    <tns:obtener_consumo_response>
+      <obtener_consumo_result xsi:type="tns:obtener_consumo_result">
+        <plan_actual xsi:type="xsd:string">Bronce</plan_actual>
+        <creditos_asignados xsi:type="xsd:int">5000</creditos_asignados>
+        <creditos_usados xsi:type="xsd:int">178</creditos_usados>
+        <inicio_plan xsi:type="xsd:string">2016-12-05</inicio_plan>
+        <fin_plan xsi:type="xsd:string">2017-07-21</fin_plan>
+      </obtener_consumo_result>
+    </tns:obtener_consumo_response>
+  </soap:Body>
+</soap:Envelope>

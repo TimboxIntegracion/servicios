@@ -1,0 +1,10 @@
+<soapenv:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:WashOut">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <urn:consulta_rfc soapenv:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">
+         <username xsi:type="xsd:string">usuario</username>
+         <password xsi:type="xsd:string">password</password>
+         <rfc xsi:type="xsd:string">TME840315KT6</rfc>
+      </urn:consulta_rfc>
+   </soapenv:Body>
+</soapenv:Envelope>

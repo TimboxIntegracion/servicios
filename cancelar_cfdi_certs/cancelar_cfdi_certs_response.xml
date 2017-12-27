@@ -1,0 +1,16 @@
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tns="urn:WashOut">
+   <soap:Body>
+      <tns:cancelar_cfdi_response>
+         <cancelar_cfdi_result xsi:type="tns:cancelar_cfdi_result">
+            <acuse_cancelacion xsi:type="xsd:string"><![CDATA[<Acuse Fecha="2017-12-26T17:51:23" RfcEmisor="AAA010101AAA"><Folios><UUID>9C6F27D1-608A-4468-B57A-AF6C293F5728</UUID><EstatusUUID>201</EstatusUUID></Folios><Folios><UUID>9C6F27D1-608A-4468-B57A-AF6C293F5727</UUID><EstatusUUID>201</EstatusUUID></Folios><Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="SelloSAT"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#hmac-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/TR/1999/REC-xpath-19991116"><XPath>not(ancestor-or-self::*[local-name()='Signature'])</XPath></Transform></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>ML2rVJ79GS6cQNjRI7wmoRu5aFykTgian5alYvohYhR5Dh3QB43LX1RadDFutgMIM3q60LozLGdtmLVDdnhZsg==</DigestValue></Reference></SignedInfo><SignatureValue>lO73l44krAoObyw+HGI/ychDJa3PpxiqDWZ0tLqUrhDj0E4Dv5mWE1t4wzOST26zJENixF4ZBGAk8Jj+fM8Kuw==</SignatureValue><KeyInfo><KeyName>00001088888800000016</KeyName><KeyValue><RSAKeyValue><Modulus>xnL2zDPtH5jDsAZDTIfMqbKGrve+At8Kyx2EZvbfXbpK9uVExWS874oMelFzNq69/YqSReT3I7I8wr+joy5O7ouZH+4KWdIGp4Si6lHe0kntxzNmuuKyOPkJ9tMcntnFmQ4bfxFxlg/Ud2hCtuoy3j2xYkIXu5O4pGM98Nz8pAM=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue></KeyInfo></Signature></Acuse>]]></acuse_cancelacion>
+            <comprobantes_cancelados xsi:type="xsd:string"><![CDATA[<comprobante_cancelado>
+      <uuid>9C6F27D1-608A-4468-B57A-AF6C293F5728</uuid>
+      <cancelado>Cancelado Exitosamente</cancelado>
+    </comprobante_cancelado><comprobante_cancelado>
+      <uuid>9C6F27D1-608A-4468-B57A-AF6C293F5727</uuid>
+      <cancelado>Cancelado Exitosamente</cancelado>
+    </comprobante_cancelado>]]></comprobantes_cancelados>
+         </cancelar_cfdi_result>
+      </tns:cancelar_cfdi_response>
+   </soap:Body>
+</soap:Envelope>

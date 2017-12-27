@@ -1,0 +1,45 @@
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tns="urn:WashOut">
+  <soap:Body>
+    <tns:timbrar_cfdi_response>
+      <timbrar_cfdi_result xsi:type="tns:timbrar_cfdi_result">
+        <xml xsi:type="xsd:string"><?xml version="1.0" encoding="utf-8"?>
+        <cfdi:Comprobante xmlns:cfdi="http://www.sat.gob.mx/cfd/3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Certificado="" Fecha="2017-12-26T17:45:39" FormaPago="01" LugarExpedicion="06300" MetodoPago="PUE" Moneda="MXN" NoCertificado="" Sello="ElheOiPbNNbbVQRwpjyRKRmOAnF0mW4Y1vWwvroiPhy0ke1qooMZwizfFtO7sifwywJ64W5UMq8vLx+NDv/x+II69eABb6V+W4DmPsec1OQHqgGcTPAb9TsvojQY0lWWwEzBt0pGfpKhdLA7i7RQGB4mm+N5ku9p3Y7G122U/sCaMKaYOPxzpGEApa+fcyNgfFg0NcKqQohMYMn2IPSfeexQfuzAWq7oMMH9rZd01rudPjV/qtoEQ6e7OFPR/SkwH7JADJiSFLvxTRqBIkZARVPZzpBJxa7CLalORh5QnVSMJt6UhV7CiYd2TIiAtA3GTfkUfXyhdr5+DBqxaYViKg==" SubTotal="1510.00" TipoCambio="1" TipoDeComprobante="I" Total="1751.60" Version="3.3" xsi:schemaLocation="http://www.sat.gob.mx/cfd/3 http://www.sat.gob.mx/sitio_internet/cfd/3/cfdv33.xsd">
+          <cfdi:Emisor Nombre="SENTIENT SA DE CV" RegimenFiscal="601" Rfc="AAA010101AAA"/>
+          <cfdi:Receptor Nombre="IT SW Development Solutions de Mexico S de RL de CV" Rfc="IAD121214B34" UsoCFDI="P01"/>
+          <cfdi:Conceptos>
+            <cfdi:Concepto Cantidad="5" ClaveProdServ="10122100" ClaveUnidad="M74" Descripcion="prueba Catalogos Nuevos" Importe="1250.00" Unidad="Kilo" ValorUnitario="250.00">
+              <cfdi:Impuestos>
+                <cfdi:Traslados>
+                  <cfdi:Traslado Base="1250.00" Importe="200.00" Impuesto="002" TasaOCuota="0.160000" TipoFactor="Tasa"/>
+                </cfdi:Traslados>
+              </cfdi:Impuestos>
+            </cfdi:Concepto>
+            <cfdi:Concepto Cantidad="1" ClaveProdServ="24111500" ClaveUnidad="KGM" Descripcion="traslucida 90x90 cm. cal. 200" Importe="22.00" Unidad="kg" ValorUnitario="22.00">
+              <cfdi:Impuestos>
+                <cfdi:Traslados>
+                  <cfdi:Traslado Base="22.00" Importe="3.52" Impuesto="002" TasaOCuota="0.160000" TipoFactor="Tasa"/>
+                </cfdi:Traslados>
+              </cfdi:Impuestos>
+            </cfdi:Concepto>
+            <cfdi:Concepto Cantidad="10" ClaveProdServ="13101712" ClaveUnidad="KGM" Descripcion="POLIETILENO DE BAJA DENSIDAD" Importe="238.00" Unidad="KG" ValorUnitario="23.80">
+              <cfdi:Impuestos>
+                <cfdi:Traslados>
+                  <cfdi:Traslado Base="238.00" Importe="38.08" Impuesto="002" TasaOCuota="0.160000" TipoFactor="Tasa"/>
+                </cfdi:Traslados>
+              </cfdi:Impuestos>
+            </cfdi:Concepto>
+          </cfdi:Conceptos>
+          <cfdi:Impuestos TotalImpuestosTrasladados="241.60">
+            <cfdi:Traslados>
+              <cfdi:Traslado Importe="241.60" Impuesto="002" TasaOCuota="0.160000" TipoFactor="Tasa"/>
+            </cfdi:Traslados>
+          </cfdi:Impuestos>
+          <cfdi:Complemento>
+            <tfd:TimbreFiscalDigital xmlns:tfd="http://www.sat.gob.mx/TimbreFiscalDigital" xsi:schemaLocation="http://www.sat.gob.mx/TimbreFiscalDigital http://www.sat.gob.mx/sitio_internet/cfd/TimbreFiscalDigital/TimbreFiscalDigitalv11.xsd" Version="1.1" UUID="01574E01-54F8-4E03-B6EB-36C8826CCFAF" FechaTimbrado="2017-12-26T17:45:49" RfcProvCertif="IAD121214B34" SelloCFD="ElheOiPbNNbbVQRwpjyRKRmOAnF0mW4Y1vWwvroiPhy0ke1qooMZwizfFtO7sifwywJ64W5UMq8vLx+NDv/x+II69eABb6V+W4DmPsec1OQHqgGcTPAb9TsvojQY0lWWwEzBt0pGfpKhdLA7i7RQGB4mm+N5ku9p3Y7G122U/sCaMKaYOPxzpGEApa+fcyNgfFg0NcKqQohMYMn2IPSfeexQfuzAWq7oMMH9rZd01rudPjV/qtoEQ6e7OFPR/SkwH7JADJiSFLvxTRqBIkZARVPZzpBJxa7CLalORh5QnVSMJt6UhV7CiYd2TIiAtA3GTfkUfXyhdr5+DBqxaYViKg==" NoCertificadoSAT="20001000000300022323" SelloSAT="ePP1XK2SeCh1vAoXV/lnY1nqp1SkKTzgz2ntEOiycutMek3qXA3tAV8PFMKRqasIwcexJTbB+XzlsDORjm1+HWOqdyOdOH7Ohr6yAwt3yJ3Il1CJyAtnvvdhFIRRfS4Xfg5vmVVDnpZNfb9Wq9u1vAWAeNjguq3kQjxvyQcA4JkzYPUGzveYtAr9FnCaxN4Okdkmi96Pvmk+m4/UvY15LAc6ZfqD6lqUWSr2A6JSMwKFpc/FPwkE/6UkSIV0QcLgbicnnkWD+eVB+1XtZztjgvydC0gA+TA+4kjJHj4FJnzTcMCpx6P5v4iFr9XRfBX51K+0uKKKb0sb/3DXXuYt7Q=="/>
+          </cfdi:Complemento>
+        </cfdi:Comprobante>
+        </xml>
+      </timbrar_cfdi_result>
+    </tns:timbrar_cfdi_response>
+  </soap:Body>
+</soap:Envelope>

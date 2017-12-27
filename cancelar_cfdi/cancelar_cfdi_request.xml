@@ -1,0 +1,17 @@
+<soapenv:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:WashOut">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <urn:cancelar_cfdi soapenv:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">
+         <username xsi:type="xsd:string">usuario</username>
+         <password xsi:type="xsd:string">password</password>
+         <rfcemisor xsi:type="xsd:string">AAA010101AAA</rfcemisor>
+         <uuids xsi:type="urn:uuid">
+            <!--Zero or more repetitions:-->
+            <uuid xsi:type="xsd:string">9C6F27D1-608A-4468-B57A-AF6C293F5728</uuid>
+            <uuid xsi:type="xsd:string">9C6F27D1-608A-4468-B57A-AF6C293F5727</uuid>
+         </uuids>
+         <pfxbase64 xsi:type="xsd:string">"Archivo PFX en base 64"</pfxbase64>
+         <pfxpassword xsi:type="xsd:string">contraseñaPFX</pfxpassword>
+      </urn:cancelar_cfdi>
+   </soapenv:Body>
+</soapenv:Envelope>

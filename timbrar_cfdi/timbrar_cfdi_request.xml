@@ -1,0 +1,10 @@
+<soapenv:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:WashOut">
+    <soapenv:Header/>
+    <soapenv:Body>
+      <urn:timbrar_cfdi soapenv:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">
+        <username xsi:type="xsd:string">usuario</username>
+        <password xsi:type="xsd:string">password</password>
+        <sxml xsi:type="xsd:string">"XML en base 64"</sxml>
+    </urn:timbrar_cfdi>
+    </soapenv:Body>
+  </soapenv:Envelope>

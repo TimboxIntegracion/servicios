@@ -1,0 +1,12 @@
+<soapenv:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:WashOut">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <urn:recuperar_comprobante soapenv:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">
+         <username xsi:type="xsd:string">usuario</username>
+         <password xsi:type="xsd:string">password</password>
+         <uuids xsi:type="urn:uuid">
+         		<uuid xsi:type="xsd:string">55169D6D-73B4-4211-9D8B-BA8D86DD08C8</uuid>
+         	</uuids>
+      </urn:recuperar_comprobante>
+   </soapenv:Body>
+</soapenv:Envelope>
