@@ -1,43 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tns="urn:WashOut">
-  <soap:Body>
-    <tns:recuperar_comprobante_external_id_response>
-      <recuperar_comprobante_external_id_result xsi:type="tns:recuperar_comprobante_external_id_result">
-        <estatus xsi:type="xsd:string">200</estatus>
-        <cantidad xsi:type="xsd:string">1</cantidad>
-        <comprobantes xsi:type="xsd:string"><?xml version="1.0" encoding="UTF-8"?>
-<Comprobantes type="array">
-  <CFDI>
-    <external-id>12345</external-id>
-    <xml><?xml version="1.0" encoding="utf-8"?>
-<cfdi:Comprobante xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cfdi="http://www.sat.gob.mx/cfd/3" Version="3.3" Serie="RogueOne" Folio="HNFK231" Fecha="2017-12-21T13:42:21" Sello="QMr75rF//LuMKztWsSk0c6FWBRgVd7pWh/UlAfqXg+DcD4AZfN8uBhR4zBU9RTyB5zOyld9/lTc+CoshbJIonHpDOn3OpNimAFzEcjw2alNPfyNLhGpjl2K+m3hpr8bFgrItbEyfJAaIQZQbJ7q3eKEjUi54s3rMblr+shCD9nB0OjNsGdaLvxNfNeMvvp5BUwnq3eTowGGpHn36AchGqVUjF4mvfCfurl1cjyar/4/cXYUcRlo8kIXO9R4G7cYQ8uIYNpfxjFRLqkU0CAzTs9Cln01yC0M3LhlMHT3sv2+guRur5GNcgZ/XPlFGpmC+4Ip4d5dy8jeQ7IK4tJJYog==" FormaPago="01" NoCertificado="" Certificado="" SubTotal="200.12" Descuento="10.0" Moneda="MXN" TipoCambio="1" Total="542.34" TipoDeComprobante="I" MetodoPago="PUE" LugarExpedicion="06300" xsi:schemaLocation="http://www.sat.gob.mx/cfd/3 http://www.sat.gob.mx/sitio_internet/cfd/3/cfdv33.xsd ">
-  <cfdi:Emisor Rfc="LAN7008173R5" Nombre="CINDEMEX SA DE CV" RegimenFiscal="601"/>
-  <cfdi:Receptor Rfc="CAGX830207GW3" Nombre="Oscar Castillo" UsoCFDI="G03"/>
+   <soap:Body>
+      <tns:timbrar_cfdi_referencia_response>
+         <timbrar_cfdi_referencia_result xsi:type="tns:timbrar_cfdi_referencia_result">
+            <xml xsi:type="xsd:string"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
+<cfdi:Comprobante xmlns:cfdi="http://www.sat.gob.mx/cfd/3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Certificado="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" Fecha="2018-10-24T10:03:26" FormaPago="01" LugarExpedicion="06300" MetodoPago="PUE" Moneda="MXN" NoCertificado="30001000000300023708" Sello="LtNB3KuDlnKluccVlIffQo7LvxZC2OiPPO3QdTHe95LoR8V1jGklAdZCSsOz7GeZ6LCNUZqbGrfH663aVKyN/ArUFMAoSpIoro1lmMHcXjnCDmOC6HDaQpZ6FJRkfLfXJdhIyA/aMAKQWMzMxEeZN7bKanf9fqD7xcQ0vCBlxuFQGQt7M9VaTBUfBKSSxggBc+ToqOB294pd0fQj5rexQTHFy9ulLV47H9i8xZ3uLKwvkatnD6un+OaSpA3G2b09H2p+Akwjxa1MIJfJIUIeW7SYPYBcrTvKVWU8ZBlczCqzgPmLVKq3qofbiJpMUW97+rOqyyCgzk7CV4h0PZjYPw==" SubTotal="1510.00" TipoCambio="1" TipoDeComprobante="I" Total="1751.60" Version="3.3" xsi:schemaLocation="http://www.sat.gob.mx/cfd/3 http://www.sat.gob.mx/sitio_internet/cfd/3/cfdv33.xsd">
+  <cfdi:Emisor Nombre="SENTIENT SA DE CV" RegimenFiscal="601" Rfc="AAA010101AAA"/>
+  <cfdi:Receptor Nombre="IT SW Development Solutions de Mexico S de RL de CV" Rfc="IAD121214B34" UsoCFDI="P01"/>
   <cfdi:Conceptos>
-    <cfdi:Concepto ClaveProdServ="50211503" NoIdentificacion="UT421511" Cantidad="1" ClaveUnidad="H87" Unidad="Pieza" Descripcion="Cigarros" ValorUnitario="200.1230" Descuento="10.000" Importe="200.123000">
+    <cfdi:Concepto Cantidad="5" ClaveProdServ="10122100" ClaveUnidad="M74" Descripcion="prueba Catalogos Nuevos" Importe="1250.00" Unidad="Kilo" ValorUnitario="250.00">
       <cfdi:Impuestos>
         <cfdi:Traslados>
-          <cfdi:Traslado Base="200.123000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="32.019680"/>
-          <cfdi:Traslado Base="200.123000" Impuesto="003" TipoFactor="Tasa" TasaOCuota="1.600000" Importe="320.196800"/>
+          <cfdi:Traslado Base="1250.00" Importe="200.00" Impuesto="002" TasaOCuota="0.160000" TipoFactor="Tasa"/>
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto Cantidad="1" ClaveProdServ="24111500" ClaveUnidad="KGM" Descripcion="traslucida 90x90 cm. cal. 200" Importe="22.00" Unidad="kg" ValorUnitario="22.00">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="22.00" Importe="3.52" Impuesto="002" TasaOCuota="0.160000" TipoFactor="Tasa"/>
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto Cantidad="10" ClaveProdServ="13101712" ClaveUnidad="KGM" Descripcion="POLIETILENO DE BAJA DENSIDAD" Importe="238.00" Unidad="KG" ValorUnitario="23.80">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="238.00" Importe="38.08" Impuesto="002" TasaOCuota="0.160000" TipoFactor="Tasa"/>
         </cfdi:Traslados>
       </cfdi:Impuestos>
     </cfdi:Concepto>
   </cfdi:Conceptos>
-  <cfdi:Impuestos TotalImpuestosTrasladados="352.22">
+  <cfdi:Impuestos TotalImpuestosTrasladados="241.60">
     <cfdi:Traslados>
-      <cfdi:Traslado Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="32.0200"/>
-      <cfdi:Traslado Impuesto="003" TipoFactor="Tasa" TasaOCuota="1.600000" Importe="320.2000"/>
+      <cfdi:Traslado Importe="241.60" Impuesto="002" TasaOCuota="0.160000" TipoFactor="Tasa"/>
     </cfdi:Traslados>
   </cfdi:Impuestos>
   <cfdi:Complemento>
-    <tfd:TimbreFiscalDigital xmlns:tfd="http://www.sat.gob.mx/TimbreFiscalDigital" xsi:schemaLocation="http://www.sat.gob.mx/TimbreFiscalDigital http://www.sat.gob.mx/sitio_internet/cfd/TimbreFiscalDigital/TimbreFiscalDigitalv11.xsd" Version="1.1" UUID="E9ACDE4D-EABC-4EAC-8110-D96EFE84C01C" FechaTimbrado="2017-12-21T13:42:24" RfcProvCertif="IAD121214B34" SelloCFD="QMr75rF//LuMKztWsSk0c6FWBRgVd7pWh/UlAfqXg+DcD4AZfN8uBhR4zBU9RTyB5zOyld9/lTc+CoshbJIonHpDOn3OpNimAFzEcjw2alNPfyNLhGpjl2K+m3hpr8bFgrItbEyfJAaIQZQbJ7q3eKEjUi54s3rMblr+shCD9nB0OjNsGdaLvxNfNeMvvp5BUwnq3eTowGGpHn36AchGqVUjF4mvfCfurl1cjyar/4/cXYUcRlo8kIXO9R4G7cYQ8uIYNpfxjFRLqkU0CAzTs9Cln01yC0M3LhlMHT3sv2+guRur5GNcgZ/XPlFGpmC+4Ip4d5dy8jeQ7IK4tJJYog==" NoCertificadoSAT="20001000000300022323" SelloSAT="ke3Aono8q6dEtuUfzgjxbJCfeCeC7UvvOh45x5PhdFUamXELuVR/8MYIGDsCzgv1/eMPFrIbAjjI13xJRB7a+racursYv4PbTJTM9+7OtxlmXFkQs0uRun0rItncY4Kv4WTEmZ/ps3l/JqCahvRC5sDk/SmeYVol7wW4o1fw/bP0k56YzKQ79Robiilt7d+5NVGiaxCZs3xX9LJ1cVGONdKX4RiRcWRFCcvuIkIHLYvGVfcM9LOGuB4slv7osiatwVGW7qlF/jcRd0eKLCDwLaQEaQjIwgDPhVmfrKrKnqaflscVL42DPvwveXd5xM26q9J4LV6qFrwyFn6rknulHA=="/>
+    <tfd:TimbreFiscalDigital xmlns:tfd="http://www.sat.gob.mx/TimbreFiscalDigital" xsi:schemaLocation="http://www.sat.gob.mx/TimbreFiscalDigital http://www.sat.gob.mx/sitio_internet/cfd/TimbreFiscalDigital/TimbreFiscalDigitalv11.xsd" Version="1.1" UUID="0D597F01-0E2C-4F35-BC76-3D4D47970242" FechaTimbrado="2018-10-24T12:58:26" RfcProvCertif="IAD121214B34" SelloCFD="LtNB3KuDlnKluccVlIffQo7LvxZC2OiPPO3QdTHe95LoR8V1jGklAdZCSsOz7GeZ6LCNUZqbGrfH663aVKyN/ArUFMAoSpIoro1lmMHcXjnCDmOC6HDaQpZ6FJRkfLfXJdhIyA/aMAKQWMzMxEeZN7bKanf9fqD7xcQ0vCBlxuFQGQt7M9VaTBUfBKSSxggBc+ToqOB294pd0fQj5rexQTHFy9ulLV47H9i8xZ3uLKwvkatnD6un+OaSpA3G2b09H2p+Akwjxa1MIJfJIUIeW7SYPYBcrTvKVWU8ZBlczCqzgPmLVKq3qofbiJpMUW97+rOqyyCgzk7CV4h0PZjYPw==" NoCertificadoSAT="20001000000300022323" SelloSAT="DttmGssLOxZnqBCgCS7xY0V0yZ2KYCOCgCKLKvGp/FeNelYxCJTEF+LNA+ZDeVq1kjeCVVAJf5erCPpO4QmkIUHHsTVxMzjRm3+bq3rohtRTA2snzyPa36bgfDg2xLzjuxulC1AjkxTVf4wE6OqI45SthYetnFrtr3PKU74Z/3R1JtrlDAlI0hLgbG/B08BxkcCJoB0g5HzQb63s0KQS0rxZU7jUV+zWyty/daS8adGaH8Nsp4tZqz55Pm1c+9DF2MnKYnWUXihqfyQpIDx7T6oPI5oj56E+cCojaL6JZl+gCM03dQBtDftCtATfgk77xLoys3Ez5swfKnrsC9uTdA=="/>
   </cfdi:Complemento>
-</cfdi:Comprobante>
-</xml>
-  </CFDI>
-</Comprobantes>
-</comprobantes>
-      </recuperar_comprobante_external_id_result>
-    </tns:recuperar_comprobante_external_id_response>
-  </soap:Body>
+</cfdi:Comprobante>]]></xml>
+         </timbrar_cfdi_referencia_result>
+      </tns:timbrar_cfdi_referencia_response>
+   </soap:Body>
 </soap:Envelope>
